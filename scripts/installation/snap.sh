@@ -6,9 +6,9 @@ echo "#################################";
 
 
 sudo snap install --classic code;
-snap install spotify;
-snap install discord;
-snap install insomnia
+sudo snap install spotify;
+sudo snap install discord;
+sudo snap install insomnia
 
 
 echo "################################";

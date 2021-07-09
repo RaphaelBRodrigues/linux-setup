@@ -1,0 +1,18 @@
+FROM ubuntu:18.04
+
+run apt update 
+run apt install -y software-properties-common 
+run apt install -y nginx 
+run apt-get install -y php7.4-cli php7.4-json php7.4-json php7.4-fpm php7.4-gd php7.4-ldap  php7.4-mbstring  php7.4-mysql  php7.4-soap php7.4-sqlite3 php7.4-xml php7.4-zip php7.4-intl php-imagick vim
+run apt-get install -y php7.4-curl curl
+
+RUN chmod -R 755 /var/www/html
+
+
+run apt-get clean
+run apt install -y vim
+run apt update
+label Description="php_web"	 
+
+EXPOSE 80
+EXPOSE 3306

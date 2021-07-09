@@ -4,8 +4,8 @@ echo "#################################";
 echo "       Running js Script         ";
 echo "#################################";
 
-apt install nodejs;
-apt install npm;
+sudo apt install nodejs;
+sudo apt install npm;
 
 npm install -g yarn;
 npm install -g nodemon;
