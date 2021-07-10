@@ -2,7 +2,7 @@
 
 ## About
 
-The scripts in this repository will automatizate some common tasks usually have to be done, when the system is installed 
+The scripts in this repository will automate some common tasks that usually have to be done when the system is installed 
 
 ## Scripts
 
@@ -20,7 +20,7 @@ or
 
 ### Basic setup
 
-This script will install some softwares and make some small configurations
+This script will install some softwares and make some small settings
 
 ```sh
   curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/init.sh | bash;
@@ -30,8 +30,11 @@ This script will install some softwares and make some small configurations
 
 #### Build PHP Container
 
-Through this script an PHP(7.2) container will be created
+This script will build an *PHP* container on version 7.2 running in a *ubuntu* 18.04 image
 
 ```sh
   curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/containers/php/build.sh | bash;
 ```
+
+
+This scripts were tested on a ubuntu 20.04 
