@@ -16,6 +16,10 @@ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key ad
 sudo apt update;
 sudo apt-get install google-chrome-stable;
 
+wget -O steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb;
+sudo dpkg -i steam.deb;
+rm steam.deb;
+
 
 echo "################################";
 echo "   General Script finished   ";
