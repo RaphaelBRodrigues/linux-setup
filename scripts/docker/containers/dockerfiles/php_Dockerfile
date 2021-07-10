@@ -3,8 +3,8 @@ FROM ubuntu:18.04
 run apt update 
 run apt install -y software-properties-common 
 run apt install -y nginx 
-run apt-get install -y php7.4-cli php7.4-json php7.4-json php7.4-fpm php7.4-gd php7.4-ldap  php7.4-mbstring  php7.4-mysql  php7.4-soap php7.4-sqlite3 php7.4-xml php7.4-zip php7.4-intl php-imagick vim
-run apt-get install -y php7.4-curl curl
+run apt-get install -y php7.2-cli php7.2-json php7.2-json php7.2-fpm php7.2-gd php7.2-ldap  php7.2-mbstring  php7.2-mysql  php7.2-soap php7.2-sqlite3 php7.2-xml php7.2-zip php7.2-intl php-imagick vim
+run apt-get install -y php7.2-curl curl
 
 RUN chmod -R 755 /var/www/html
 
@@ -15,4 +15,3 @@ run apt update
 label Description="php_web"	 
 
 EXPOSE 80
-EXPOSE 3306
