@@ -165,8 +165,14 @@ Available params:
 ### Test 
   This script will make some verifications 
 
+  Available params:
+* *node*: Passing this param to the flags above the script will create (-c) or start (-s) all containers availables; 
+* *php*: Passing this param to the flags above the script will create (-c) or start (-s) an *PHP* container on version 7.2 and *Nginx* running in a *ubuntu* 18.04 image
+* *mysql*: Passing this param to the flags above the script will create (-c) or start (-s) an *MySQL* container on version 5.7 running in a *ubuntu* 18.04 image
+
+
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/test.sh | bash;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/test.sh | bash -s -- php;
 ```
 
 
