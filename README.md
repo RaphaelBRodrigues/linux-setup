@@ -162,5 +162,13 @@ Available params:
   curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -s mysql;
 ```
 
+### Test 
+  This script will make some verifications 
+
+```sh
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/test.sh | bash;
+```
+
+
 
 These scripts were tested on a ubuntu 20.04 

@@ -16,7 +16,7 @@ echo "####################################";
 echo "    Creating MySQL Docker container   ";
 echo "####################################";
 
-sudo docker run --name MySQL_container -it -d -p 3306:3306 -v /var/www/sql:/var/www/sql mysql_image;
+sudo docker run --name mysql_container -it -d -p 3306:3306 -v /var/www/sql:/var/www/sql mysql_image;
 
 echo "####################################";
 echo "    MySQL Docker container created    ";
