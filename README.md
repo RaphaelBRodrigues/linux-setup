@@ -32,87 +32,87 @@ This script will install some softwares and make some small settings
   </summary>
   <ul>
     <li>
-      <a href="https://dbeaver.io/">
+      <a target="_blank" href="https://dbeaver.io/">
         Dbeaver
       </a>
     </li>
     <li>
-      <a href="https://www.docker.com/">
+      <a target="_blank" href="https://www.docker.com/">
         Docker
       </a>
     </li>
     <li>
-      <a href="https://git-scm.com/">
+      <a target="_blank" href="https://git-scm.com/">
         Git
       </a>
     </li>
     <li>
-      <a href="https://github.com/linuxdeepin/deepin-terminal">
+      <a target="_blank" href="https://github.com/linuxdeepin/deepin-terminal">
         Deepin terminal
       </a>
     </li>
     <li>
-      <a href="https://www.google.com/intl/pt-BR/chrome/">
+      <a target="_blank" href="https://www.google.com/intl/pt-BR/chrome/">
         Google Chrome
       </a>
     </li>
     <li>
-      <a href="https://store.steampowered.com/?l=portuguese">
+      <a target="_blank" href="https://store.steampowered.com/?l=portuguese">
         Steam
       </a>
     </li>
     <li>
-      <a href="https://www.java.com/pt-BR/">
+      <a target="_blank" href="https://www.java.com/pt-BR/">
         Java
       </a>
     </li>
     <li>
-      <a href="https://nodejs.org/en/">
+      <a target="_blank" href="https://nodejs.org/en/">
         NodeJs
       </a>
     </li>
     <li>
-      <a href="https://dbeaver.io/">
+      <a target="_blank" href="https://dbeaver.io/">
         NPM
       </a>
     </li>
     <li>
-      <a href="https://yarnpkg.com/">
+      <a target="_blank" href="https://yarnpkg.com/">
         Yarn
       </a>
     </li>
     <li>
-      <a href="https://www.npmjs.com/package/nodemon">
+      <a target="_blank" href="https://www.npmjs.com/package/nodemon">
         Nodemon
       </a>
     </li>
     <li>
-      <a href="https://github.com/nvm-sh/nvm">
+      <a target="_blank" href="https://github.com/nvm-sh/nvm">
         NVM
       </a>
     </li>
     <li>
-      <a href="https://code.visualstudio.com/">
+      <a target="_blank" href="https://code.visualstudio.com/">
         VSCode
       </a>
     </li>
     <li>
-      <a href="https://www.spotify.com/br/">
+      <a target="_blank" href="https://www.spotify.com/br/">
         Spotify
       </a>
     </li>
     <li>
-      <a href="https://discord.com/">
+      <a target="_blank" href="https://discord.com/">
         Discord
       </a>
     </li>
     <li>
-      <a href="https://insomnia.rest/download">
+      <a target="_blank" href="https://insomnia.rest/download">
         Insomnia
       </a>
     </li>
     <li>
-      <a href="https://github.com/debauchee/barrier">
+      <a target="_blank" href="https://github.com/debauchee/barrier">
         Barrier
       </a>
     </li>
@@ -127,6 +127,14 @@ This script will build an *PHP* container on version 7.2 running in a *ubuntu* 1
 
 ```sh
   curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/containers/php/build.sh | bash;
+```
+
+#### Build MySQL Container
+
+This script will build an *MySQL* container on version 5.7 running in a *ubuntu* 18.04 image
+
+```sh
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/containers/mysql/build.sh | bash;
 ```
 
 
