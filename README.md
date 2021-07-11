@@ -10,11 +10,11 @@ Run the following commands in the terminal, you can use either *curl* or *wget* 
 
 exemple:
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/init.sh | bash;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
 ```
 or 
 ```sh
-  wget -qO- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/init.sh | bash;
+  wget -qO- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
 ```
 
 
@@ -23,7 +23,12 @@ or
 This script will install some softwares and make some small settings
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/init.sh | bash;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
+```
+
+To avoid the script download softwares that will be installed through snap
+```sh
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash --no-snap;
 ```
 
 <details>
@@ -33,87 +38,87 @@ This script will install some softwares and make some small settings
   <ul>
     <li>
       <a target="_blank" href="https://dbeaver.io/">
-        Dbeaver
+        Dbeaver (dpkg)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://www.docker.com/">
-        Docker
+        Docker (apt)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://git-scm.com/">
-        Git
+        Git (apt)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://github.com/linuxdeepin/deepin-terminal">
-        Deepin terminal
+        Deepin terminal (apt)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://www.google.com/intl/pt-BR/chrome/">
-        Google Chrome
+        Google Chrome (apt)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://store.steampowered.com/?l=portuguese">
-        Steam
+        Steam (dpkg)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://www.java.com/pt-BR/">
-        Java
+        Java (apt)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://nodejs.org/en/">
-        NodeJs
+        NodeJs (apt)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://dbeaver.io/">
-        NPM
+        NPM (apt)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://yarnpkg.com/">
-        Yarn
+        Yarn (npm)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://www.npmjs.com/package/nodemon">
-        Nodemon
+        Nodemon (npm)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://github.com/nvm-sh/nvm">
-        NVM
+        NVM (cURL)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://code.visualstudio.com/">
-        VSCode
+        VSCode (snap)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://www.spotify.com/br/">
-        Spotify
+        Spotify (snap)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://discord.com/">
-        Discord
+        Discord (snap)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://insomnia.rest/download">
-        Insomnia
+        Insomnia (snap)
       </a>
     </li>
     <li>
       <a target="_blank" href="https://github.com/debauchee/barrier">
-        Barrier
+        Barrier (snap)
       </a>
     </li>
   </ul>
@@ -136,25 +141,25 @@ Available params:
 #### Create PHP Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/entry.sh | bash -s -- -c php;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -c php;
 ```
 
 #### Create MySQL Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/entry.sh | bash -s -- -c mysql;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -c mysql;
 ```
 
 #### Start PHP Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/entry.sh | bash -s -- -s php;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -s php;
 ```
 
 #### Start MySQL Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/entry.sh | bash -s -- -s mysql;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -s mysql;
 ```
 
 
