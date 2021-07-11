@@ -121,20 +121,40 @@ This script will install some softwares and make some small settings
 
 ### Docker
 
-#### Build PHP Container
+With this script you can build or start some docker containers using some flags
 
-This script will build an *PHP* container on version 7.2 running in a *ubuntu* 18.04 image
+Available flags:
+* *-c*: Create the container
+* *-s*: Start the container
+
+Available params:
+* *php*: Passing this param to the flags above the script will create (-c) or start (-s) an *PHP* container on version 7.2 and *Nginx* running in a *ubuntu* 18.04 image
+* *mysql*: Passing this param to the flags above the script will create (-c) or start (-s) an *MySQL* container on version 5.7 running in a *ubuntu* 18.04 image
+* *all*: Passing this param to the flags above the script will create (-c) or start (-s) all containers availables; 
+
+
+#### Create PHP Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/containers/php/build.sh | bash;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/entry.sh | bash -s -- -c php;
 ```
 
-#### Build MySQL Container
-
-This script will build an *MySQL* container on version 5.7 running in a *ubuntu* 18.04 image
+#### Create MySQL Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/containers/mysql/build.sh | bash;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/entry.sh | bash -s -- -c mysql;
+```
+
+#### Start PHP Container
+
+```sh
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/entry.sh | bash -s -- -s php;
+```
+
+#### Start MySQL Container
+
+```sh
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/docker/entry.sh | bash -s -- -s mysql;
 ```
 
 
