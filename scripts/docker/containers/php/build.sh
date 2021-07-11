@@ -17,7 +17,7 @@ echo "####################################";
 echo "    Creating PHP Docker container   ";
 echo "####################################";
 
-sudo docker run --name php_container -it -d -p 80:80 -v /var/www/html:/var/www/html php_image;
+sudo docker run --name php_container -it -d -p 80:80 -p 443:443 -v /var/www/html:/var/www/html php_image;
 
 echo "####################################";
 echo "    PHP Docker container created    ";

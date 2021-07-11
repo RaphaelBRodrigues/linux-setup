@@ -15,3 +15,4 @@ run apt update
 label Description="php_web"	 
 
 EXPOSE 80
+EXPOSE 443
