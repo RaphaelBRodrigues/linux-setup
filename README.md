@@ -28,7 +28,7 @@ This script will install some softwares and make some small settings
 
 To avoid the script download softwares that will be installed through snap
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash --no-snap;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash -s -- --no-snap
 ```
 
 <details>
