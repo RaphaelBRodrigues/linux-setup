@@ -8,6 +8,9 @@ curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master
 
 curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/config/vtex.sh | bash;
 
+curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/config/wallpaper.sh | bash;
+
+
 
 echo "################################";
 echo "   General Script finished   ";
