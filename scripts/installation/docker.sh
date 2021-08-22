@@ -4,8 +4,8 @@ echo "#################################";
 echo "    Running docker Script    ";
 echo "#################################";
 
-sudo apt install docker
-sudo apt install docker-compose
+sudo apt install -y docker
+sudo apt install -y docker-compose
 
 echo "################################";
 echo "   Docker Script finished   ";

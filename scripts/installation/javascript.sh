@@ -4,8 +4,8 @@ echo "#################################";
 echo "       Running js Script         ";
 echo "#################################";
 
-sudo apt install nodejs;
-sudo apt install npm;
+sudo apt install -y nodejs;
+sudo apt install -y npm;
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash;
 
 npm install -g yarn;
