@@ -7,6 +7,8 @@ echo "###########################"
 sleep 5;
 clear;
 
+sudo su;
+
 apt install curl;
 
 curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/scripts/installation/entry.sh | bash;

@@ -10,11 +10,11 @@ Run the following commands in the terminal, you can use either *curl* or *wget* 
 
 exemple:
 ```sh
-  sudo curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
 ```
 or 
 ```sh
-  sudo wget -qO- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
+  wget -qO- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
 ```
 
 
