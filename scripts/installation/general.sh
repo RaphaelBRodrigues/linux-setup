@@ -16,6 +16,8 @@ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key ad
 sudo apt update;
 sudo apt install -y google-chrome-stable;
 
+sudo apt install vim;
+
 wget -O steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb;
 sudo dpkg -i steam.deb;
 rm steam.deb;
