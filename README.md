@@ -1,5 +1,5 @@
-# Ubuntu setup
-
+# linux setup
+/ubuntu
 ## About
 
 The scripts in this repository will automate some common tasks that usually have to be done when the system is installed 
@@ -10,11 +10,11 @@ Run the following commands in the terminal, you can use either *curl* or *wget* 
 
 exemple:
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/setup.sh | bash;
 ```
 or 
 ```sh
-  wget -qO- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
+  wget -qO- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/setup.sh | bash;
 ```
 
 
@@ -23,12 +23,12 @@ or
 This script will install some softwares and make some small settings
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/setup.sh | bash;
 ```
 
 To avoid the script download softwares that will be installed through snap
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/setup.sh | bash -s -- --no-snap
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/setup.sh | bash -s -- --no-snap
 ```
 
 <details>
@@ -133,33 +133,33 @@ Available flags:
 * *-s*: Start the container
 
 Available params:
-* *php*: Passing this param to the flags above the script will create (-c) or start (-s) an *PHP* container on version 7.2 and *Nginx* running in a *ubuntu* 18.04 image
-* *mysql*: Passing this param to the flags above the script will create (-c) or start (-s) an *MySQL* container on version 5.7 running in a *ubuntu* 18.04 image
+* *php*: Passing this param to the flags above the script will create (-c) or start (-s) an *PHP* container on version 7.2 and *Nginx* running in a *linux* 18/ubuntu.04 image
+* *mysql*: Passing this param to the flags above the script will create (-c) or start (-s) an *MySQL* container on version 5.7 running in a *linux* 18/ubuntu.04 image
 * *all*: Passing this param to the flags above the script will create (-c) or start (-s) all containers availables; 
 
 
 #### Create PHP Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -c php;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/docker.sh | bash -s -- -c php;
 ```
 
 #### Create MySQL Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -c mysql;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/docker.sh | bash -s -- -c mysql;
 ```
 
 #### Start PHP Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -s php;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/docker.sh | bash -s -- -s php;
 ```
 
 #### Start MySQL Container
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/docker.sh | bash -s -- -s mysql;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/docker.sh | bash -s -- -s mysql;
 ```
 
 ### Test 
@@ -172,9 +172,9 @@ Available params:
 
 
 ```sh
-  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/ubuntu-setup/master/test.sh | bash -s -- php;
+  curl -o- https://raw.githubusercontent.com/RaphaelBRodrigues/linux-setup/master/ubuntu/test.sh | bash -s -- php;
 ```
 
 
 
-These scripts were tested on a ubuntu 20.04 
+These scripts were tested on a linux 20.04/ubuntu 
