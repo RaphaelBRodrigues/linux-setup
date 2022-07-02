@@ -4,9 +4,15 @@ echo "###########################";
 echo "      Starting setup       ";
 echo "###########################"
 
+
 sudo dnf check-update -y
 sudo dnf upgrade -y 
 sudo dnf install -y snapd
+
+sudo dnf install fedora-workstation-repositories
+
+sudo dnf config-manager --set-enabled google-chrome
+sudo dnf install google-chrome-stable -y
 
 sudo dnf install -y nodejs 
 sudo dnf install -y docker 
