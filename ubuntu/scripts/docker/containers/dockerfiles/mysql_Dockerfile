@@ -1,0 +1,18 @@
+FROM ubuntu:18.04
+ARG DEBIAN_FRONTEND=noninteractive
+
+run apt update 
+run apt install -y vim
+run apt install -y mysql-client
+run apt install -y mysql-client-5.7 
+run apt install -y mysql-client-core-5.7 
+run apt install -y mysql-common 
+run apt install -y mysql-server
+run apt install -y mysql-server-5.7
+run apt install -y mysql-server-core-5.7
+run apt install -y mysql-source-5.7 
+run apt-get clean
+run apt update
+label Description="mysql"	 
+
+EXPOSE 3306
