@@ -1,5 +1,5 @@
-# linux setup
-/ubuntu
+# Ubuntu Setup
+
 ## About
 
 The scripts in this repository will automate some common tasks that usually have to be done when the system is installed 
