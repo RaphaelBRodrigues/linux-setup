@@ -4,6 +4,7 @@ echo "#################################";
 echo "       Running snap Script         ";
 echo "#################################";
 
+sudo ln -s /var/lib/snapd/snap /snap
 
 sudo snap install code;
 sudo snap install spotify;
