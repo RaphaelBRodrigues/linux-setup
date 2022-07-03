@@ -1,11 +1,11 @@
 #!/bin/bash
 
-curl -o- $BASE_URL/general.sh | bash;
-curl -o- $BASE_URL/aws.sh | bash;
-curl -o- $BASE_URL/db.sh | bash;
-curl -o- $BASE_URL/docker.sh | bash;
-curl -o- $BASE_URL/entry.sh | bash;
-curl -o- $BASE_URL/node.sh | bash;
-curl -o- $BASE_URL/snap.sh | bash;
+curl -o- $BASE_URL/scripts/installation/general.sh | bash;
+curl -o- $BASE_URL/scripts/installation/aws.sh | bash;
+curl -o- $BASE_URL/scripts/installation/db.sh | bash;
+curl -o- $BASE_URL/scripts/installation/docker.sh | bash;
+curl -o- $BASE_URL/scripts/installation/entry.sh | bash;
+curl -o- $BASE_URL/scripts/installation/node.sh | bash;
+curl -o- $BASE_URL/scripts/installation/snap.sh | bash;
 
 sudo /etc/init.d/networking restart
