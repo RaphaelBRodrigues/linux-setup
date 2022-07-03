@@ -6,7 +6,7 @@ echo "#################################";
 
 sudo ln -s /var/lib/snapd/snap /snap
 
-sudo snap install code;
+sudo snap install code --classic;
 sudo snap install spotify;
 sudo snap install discord;
 sudo snap install insomnia;
